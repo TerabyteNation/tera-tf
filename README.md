@@ -1,3 +1,3 @@
 TeraGaming Project
 =======
-This code is for the TeraGaming website.
+This code is for the TeraGaming website, which is written in Ruby.
