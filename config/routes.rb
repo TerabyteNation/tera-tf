@@ -5,7 +5,8 @@ TeraTf::Application.routes.draw do
   get "/page/home"
   get "/page/about"
   get "/page/trading"
-  get "/page/home"
+
+  root to: "page#home"
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
