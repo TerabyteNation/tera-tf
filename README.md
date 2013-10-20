@@ -1,3 +1,3 @@
 TeraGaming Project
 =======
-Welcome contributors!
+This code is for the TeraGaming website.
