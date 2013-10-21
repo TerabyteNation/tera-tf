@@ -1,14 +1,20 @@
 <header>
-  {{logo}}
 
-  <h2>tera.tf</h2>
+  <div class="content">
 
-  <ul>
-    <a href="#"><li>somebody</li></a>
-    <a href="#"><li>once</li></a>
-    <a href="#"><li>told me</li></a>
-    <a href="#"><li>the world</li></a>
-    <a href="#"><li>is gonna</li></a>
-    <a href="#"><li>roll me</li></a>
-  </ul>
+    <h2>tera.tf</h2>
+
+    <ul>
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Server Info</li></a>
+      <a href="#"><li>Donations</li></a>
+      <a href="#"><li>Forums</li></a>
+      <a href="#"><li>Competitive</li></a>
+      <a href="#"><li>Trading</li></a>
+    </ul>
+
+    <span class="user-info">
+      {{login}}
+    </span>
+  </div>
 </header>

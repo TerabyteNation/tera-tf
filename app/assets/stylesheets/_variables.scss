@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:700|Open+Sans:400,300,700);
+
+$header-background: #222;
+$main-color: #444;
+$header-color: #fff;
+
+@mixin main-font {
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: $main-color;
+}
+
+@mixin header-font {
+  font-family: "Bitter";
+  font-weight: bold;
+}
+
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+$ninesixty-fluid-gutter-margin: 2%;
+$ninesixty-fluid-gutter-width: 2%;
+$ninesixty-fluid-grid-width: 92%;
+$ninesixty-fluid-grid-margin: 4%;
+$ninesixty-fluid-grid-min-width: 960px;
+$ninesixty-columns: 16;
+$ninesixty-class-separator: "-";
+@import '960';

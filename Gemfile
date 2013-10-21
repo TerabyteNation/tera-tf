@@ -36,6 +36,8 @@ gem 'thin'
 
 gem 'curly-templates'
 
+gem 'sass-960gs'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

@@ -1,3 +1,105 @@
 // Place all the styles related to the page controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+$footer-height: 50px;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  @include main-font;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: $footer-height;
+}
+
+footer {
+  position: relative;
+  margin-top: -$footer-height;
+  height: $footer-height;
+  clear: both;
+  background-color: $header-background;
+  color: darken($header-color, 50%);
+  text-align: center;
+  font-size: 14px;
+  padding-top: (50px - 16px)/2;
+}
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
+#container {
+  @include fluid-grid-container;
+}
+
+header {
+  background-color: $header-background;
+  min-width: 960px;
+  width: 100%;
+  @include clearfix;
+
+  div.content {
+    @include fluid-grid(16);
+  }
+
+  h2 {
+    @include header-font;
+    display: inline-block;
+    color: $header-color;
+    @include fluid-grid(2);
+    font-size: 24px;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 25px 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    @include fluid-grid(10);
+
+    a {
+      display: inline-block;
+      color: $header-color;
+      text-decoration: none;
+      text-align: center;
+      $number-of-elements: 6;
+      @include fluid-grid(16/$number-of-elements);
+
+      li {
+        display: inline;
+        @include header-font;
+      }
+    }
+  }
+
+  span.user-info {
+    margin: 23px 0;
+    text-align: center;
+    @include fluid-grid(4);
+  }
+}

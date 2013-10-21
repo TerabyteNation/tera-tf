@@ -20,6 +20,10 @@ class Layouts::ApplicationPresenter < Curly::Presenter
     render "header"
   end
 
+  def footer
+    render "footer"
+  end
+
   def csrf
     csrf_meta_tags
   end
