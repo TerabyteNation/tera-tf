@@ -6390,3 +6390,4 @@ ActionController::RoutingError (No route matches [GET] "/page/js/main.js"):
 
 Started GET "/assets/sits_small.png" for 127.0.0.1 at 2013-10-21 15:10:07 -0700
 Served asset /sits_small.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml

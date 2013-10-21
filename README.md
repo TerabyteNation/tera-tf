@@ -1,3 +1,5 @@
 TeraGaming Project
 =======
-This code is for the TeraGaming website, which is written in Ruby.
+Welcome Contributors!
+
+This repo contains the code for TerabyteNation's website, which is written in the language of RUBY.
