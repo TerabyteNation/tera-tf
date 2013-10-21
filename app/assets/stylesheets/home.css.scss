@@ -1,0 +1,41 @@
+@import "variables";
+
+.jumbotron {
+  background-color: $purple;
+  color: $header-color;
+  @include grid-prefix(2);
+  @include grid-suffix(2);
+  @include clearfix;
+  @include fluid-grid(16);
+  @include alpha;
+  @include omega;
+  width: 100%;
+  text-shadow: 0 2px 0 darken($purple, 20%);
+
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    @include header-font;
+  }
+
+  a {
+    background-color: #f0f0f0;
+    color: $main-color;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 0 3px 0 darken($purple, 25%);
+    border-radius: 2px;
+    text-shadow: 0 1px 0 white;
+    transition: all 0.1s linear 0;
+    display: inline-block;
+
+    &:active {
+      box-shadow: 0 1px darken($purple, 25%);
+    }
+  }
+}

@@ -15,14 +15,12 @@
   </head>
 
   <body>
-    <div id="wrap">
-      {{header}}
       <div id="container">
 
+        {{header}}
         {{body}}
 
       </div>
-    </div>
     {{footer}}
     {{javascripts}}
   </body>

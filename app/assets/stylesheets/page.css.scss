@@ -19,13 +19,11 @@ html, body {
   height: 100%;
 }
 
-#wrap {
-  min-height: 100%;
-}
-
-#main {
+#container {
   overflow: auto;
   padding-bottom: $footer-height;
+  min-height: 100%;
+  @include fluid-grid-container;
 }
 
 footer {
@@ -38,6 +36,8 @@ footer {
   text-align: center;
   font-size: 14px;
   padding-top: (50px - 16px)/2;
+  text-shadow: 0 1px 0 black;
+  min-width: 960px;
 }
 
 body:before {
@@ -48,18 +48,17 @@ body:before {
   margin-top: -32767px;
 }
 
-#container {
-  @include fluid-grid-container;
-}
-
 header {
   background-color: $header-background;
   min-width: 960px;
-  width: 100%;
   @include clearfix;
+  @include fluid-grid(16);
+  @include alpha;
+  @include omega;
+  width: 100%;
+  text-shadow: 0 2px 0 black;
 
   div.content {
-    @include fluid-grid(16);
   }
 
   h2 {

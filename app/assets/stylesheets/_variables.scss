@@ -3,6 +3,7 @@
 $header-background: #222;
 $main-color: #444;
 $header-color: #fff;
+$purple: #8650AC;
 
 @mixin main-font {
   font-family: "Open Sans";
@@ -30,8 +31,8 @@ $header-color: #fff;
 
 $ninesixty-fluid-gutter-margin: 2%;
 $ninesixty-fluid-gutter-width: 2%;
-$ninesixty-fluid-grid-width: 92%;
-$ninesixty-fluid-grid-margin: 4%;
+$ninesixty-fluid-grid-width: 100%;
+$ninesixty-fluid-grid-margin: 0;
 $ninesixty-fluid-grid-min-width: 960px;
 $ninesixty-columns: 16;
 $ninesixty-class-separator: "-";
