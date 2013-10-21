@@ -1,4 +1,3 @@
 TeraGaming Project
-
-Welcome contributors!
 =======
+Welcome contributors!
