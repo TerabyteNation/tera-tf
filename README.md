@@ -1,2 +1,4 @@
-tera-tf
+TeraGaming Project
+
+Welcome contributors!
 =======
