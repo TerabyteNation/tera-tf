@@ -38,6 +38,18 @@ footer {
   padding-top: (50px - 16px)/2;
   text-shadow: 0 1px 0 black;
   min-width: 960px;
+
+  a {
+    color: darken($header-color, 50%);
+    text-decoration: none;
+    border-bottom: 1px dashed darken($header-color, 50%);
+    transition: all 0.5s ease-in-out 0;
+
+    &:hover {
+      color: darken($header-color, 25%);
+      border-bottom-color: darken($header-color, 25%);
+    }
+  }
 }
 
 body:before {
@@ -75,7 +87,7 @@ header {
 
   ul {
     list-style-type: none;
-    margin: 25px 0;
+    margin: 0;
     padding: 0;
     display: inline-block;
     vertical-align: middle;
@@ -88,6 +100,16 @@ header {
       text-align: center;
       $number-of-elements: 6;
       @include fluid-grid(16/$number-of-elements);
+      transition: all 0.5s ease-in-out 0;
+      padding: {
+        top: 25px;
+        bottom: 25px;
+      }
+
+      &:hover {
+        color: $purple;
+        text-shadow: 0 3px 0 #111;
+      }
 
       li {
         display: inline;
@@ -101,6 +123,7 @@ header {
     text-align: center;
     @include fluid-grid(4);
     height: 26px;
+    color: $header-color;
 
     a { @include clearfix; height: 100%; }
 
