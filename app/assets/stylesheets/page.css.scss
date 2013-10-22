@@ -100,5 +100,12 @@ header {
     margin: 23px 0;
     text-align: center;
     @include fluid-grid(4);
+    height: 26px;
+
+    a { @include clearfix; height: 100%; }
+
+    img {
+      height: 100%;
+    }
   }
 }

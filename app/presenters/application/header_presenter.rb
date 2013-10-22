@@ -4,6 +4,6 @@ class Application::HeaderPresenter < Curly::Presenter
   end
 
   def login
-    link_to(image_tag("steam.png"), "/login").html_safe
+    link_to(image_tag("sign_in.png"), "/login").html_safe
   end
 end
