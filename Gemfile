@@ -38,6 +38,9 @@ gem 'curly-templates'
 
 gem 'sass-960gs'
 
+gem 'devise'
+gem 'omniauth-steam'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

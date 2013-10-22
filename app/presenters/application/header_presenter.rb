@@ -4,6 +4,13 @@ class Application::HeaderPresenter < Curly::Presenter
   end
 
   def login
-    link_to(image_tag("sign_in.png"), "/login").html_safe
+    if user_signed_in?
+      "Welcome, #{current_user.name}"
+    else
+      link_to(
+        image_tag("sign_in.png"),
+        user_omniauth_authorize_path(:steam)
+      ).html_safe
+    end
   end
 end
