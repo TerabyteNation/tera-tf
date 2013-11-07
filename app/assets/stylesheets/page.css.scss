@@ -127,6 +127,10 @@ header {
 
     a { @include clearfix; height: 100%; }
 
+    a img {
+      border: 0;
+      border-radius: 0;
+    }
     img {
       height: 100%;
     }
@@ -190,5 +194,10 @@ header {
     $number-of-elements: 6;
     @include fluid-grid(16/$number-of-elements);
     transition: all 0.5s ease-in-out 0;
+  }
+
+  a img {
+  border: 0;
+  border-radius: 0;
   }
 }
