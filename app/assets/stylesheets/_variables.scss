@@ -29,6 +29,10 @@ $purple: #8650AC;
   }
 }
 
+@mixin shadow {
+  box-shadow: 0 3px 0 rgba(0, 0, 0, .25);
+}
+
 $ninesixty-fluid-gutter-margin: 2%;
 $ninesixty-fluid-gutter-width: 2%;
 $ninesixty-fluid-grid-width: 100%;

@@ -9,8 +9,13 @@
   @include fluid-grid(16);
   @include alpha;
   @include omega;
+  @include shadow;
   width: 100%;
-  text-shadow: 0 2px 0 darken($purple, 20%);
+  //text-shadow: 0 2px 0 darken($purple, 20%);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, .25);
+  background-image: url(image-path("background.svg"));
+  background-position: center;
+  background-repeat: repeat;
 
   padding: {
     top: 50px;
@@ -25,10 +30,11 @@
 
   a {
     background-color: #f0f0f0;
-    color: $main-color;
+    //color: $main-color;
+    color: $purple;
     text-decoration: none;
     padding: 10px;
-    box-shadow: 0 3px 0 darken($purple, 25%);
+    @include shadow;
     border-radius: 2px;
     text-shadow: 0 1px 0 white;
     transition: all 0.1s linear 0;
@@ -38,4 +44,13 @@
       box-shadow: 0 1px darken($purple, 25%);
     }
   }
+}
+
+.jumbotron:empty {
+  height: 38%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
 }
