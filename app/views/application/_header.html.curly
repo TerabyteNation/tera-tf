@@ -2,15 +2,15 @@
 
   <div class="content">
 
-    <h2>tera.tf</h2>
+    <h2>Tera.tf</h2>
 
     <ul>
       <a href="/page/home"><li>Home</li></a>
-      <a href="#"><li>Server Info</li></a>
-      <a href="#"><li>Donations</li></a>
       <a href="#"><li>Forums</li></a>
       <a href="#"><li>Competitive</li></a>
-      <a href="#"><li>Trading</li></a>
+      <a href="/page/trading"><li>Trading</li></a>
+      <a href="/page/about"><li>About</li></a>
+      <a href="/page/info"><li>More Info?</li></a>
     </ul>
 
     <span class="user-info">
