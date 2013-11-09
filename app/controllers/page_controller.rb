@@ -5,7 +5,7 @@ class PageController < ApplicationController
   def trading
   end
 
-  def info
+  def servers
   end
 
   def about

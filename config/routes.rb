@@ -5,11 +5,12 @@ TeraTf::Application.routes.draw do
     }, controllers: {
       omniauth_callbacks: "users/omniauth_callbacks"
     }
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   get "/page/home"
-  get "/page/info"
+  get "/page/servers"
   get "/page/about"
   get "/page/faq"
   get "/page/trading"
