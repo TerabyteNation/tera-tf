@@ -136,3 +136,34 @@ header {
     }
   }
 }
+
+.sqr-button {
+  @include fluid-grid(2.5);
+  @include fluid-grid-push(0);
+  @include shadow;
+  background-color: #969696;
+  color: #444;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 5px;
+  text-shadow: 0 1px 0 white;
+
+  a img {
+    border: 0;
+    border-radius: 0;
+  }
+  a {
+    background-color: #969696;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    text-shadow: 0 1px 0 white;
+    transition: all 0.1s linear 0;
+    display: inline-block;
+    color: #F0F0F0;
+
+    &:active {
+      box-shadow: 0 1px darken($purple, 25%);
+    }
+  }
+}
