@@ -138,7 +138,7 @@ header {
 }
 
 .sqr-button {
-  @include fluid-grid(3);
+  @include fluid-grid(2);
   @include fluid-grid-push(0);
   @include shadow;
   background-color: #969696;
@@ -152,6 +152,7 @@ header {
     border: 0;
     border-radius: 0;
   }
+
   a {
     background-color: #969696;
     text-decoration: none;
@@ -164,6 +165,9 @@ header {
     text-align: center;
     transition: all 0.5s ease-in-out 0;
 
+    &:hover {
+      background-color: darken($purple, 6%);
+    }
 
     &:active {
       box-shadow: 0 1px darken($purple, 25%);
