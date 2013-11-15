@@ -13,6 +13,18 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Rails TeraGaming: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="abc99728-2285-4843-84cd-679369ca212c">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:teratf_production</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>
 
