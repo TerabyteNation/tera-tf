@@ -16,4 +16,8 @@ class PageController < ApplicationController
 
   def rules
   end
+
+  def privacy
+  end
+
 end
