@@ -20,4 +20,7 @@ class PageController < ApplicationController
   def privacy
   end
 
+  def competitive
+  end
+
 end
