@@ -23,4 +23,8 @@ class PageController < ApplicationController
   def competitive
   end
 
+  def forum
+  end
+
+
 end

@@ -6,7 +6,7 @@
 
     <ul>
       <a href="/page/home"><li>Home</li></a>
-      <a href="#"><li>Forums</li></a>
+      <a href="/page/forum"><li>Forums</li></a>
       <a href="/page/competitive"><li>Competitive</li></a>
       <a href="/page/trading"><li>Trading</li></a>
       <a href="/page/servers"><li>Servers</li></a>

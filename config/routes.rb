@@ -17,6 +17,7 @@ TeraTf::Application.routes.draw do
   get "/page/rules"
   get "/page/privacy"
   get "/page/competitive"
+  get "/page/forum"
 
   root to: "page#home"
 
