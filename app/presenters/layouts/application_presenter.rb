@@ -1,7 +1,7 @@
 class Layouts::ApplicationPresenter < Curly::Presenter
 
   def title
-    content_for(:title) || "Tera.TF - INSERT SLOGAN HERE" 
+    content_for(:title) || "Tera.TF"
   end
 
   def javascripts
