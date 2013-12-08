@@ -5,7 +5,9 @@ class Application::HeaderPresenter < Curly::Presenter
 
   def login
     if user_signed_in?
-      "Welcome, #{current_user.name}"
+      "Welcome, #{current_user.name}!"
+
+
     else
       link_to(
         image_tag("sign_in.png"),
