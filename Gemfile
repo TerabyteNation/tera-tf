@@ -50,6 +50,13 @@ gem 'sass-960gs'
 gem 'devise'
 gem 'omniauth-steam'
 
+gem 'forem', :github => "radar/forem", :branch => "rails4"
+
+gem 'friendly_id', github: "FriendlyId/friendly_id"
+gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
+
+gem 'kaminari', '0.14.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

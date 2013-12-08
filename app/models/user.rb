@@ -8,6 +8,14 @@ class User < ActiveRecord::Base
   def self.find_for_steam_oauth(auth)
     user = User.where(provider: auth[:provider], uid: auth[:uid]).first
 
+  def to_s
+    name
+  end
+
+  def email
+    "#{uid}@#{provider}.tera.tf"
+  end
+
     if user
       user.update(
         name: auth[:info][:nickname],
