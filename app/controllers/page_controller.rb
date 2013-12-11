@@ -26,5 +26,7 @@ class PageController < ApplicationController
   def forum
   end
 
+  def sfm
+  end
 
 end
