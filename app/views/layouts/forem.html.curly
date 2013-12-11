@@ -16,7 +16,7 @@
 
   <body>
       <div id="background"></div>
-      <div id="container">
+      <div id="container" class="forem">
 
         {{header}}
         {{body}}

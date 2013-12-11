@@ -9,13 +9,15 @@
   @include fluid-grid(16);
   @include alpha;
   @include omega;
-  @include shadow;
+  @include shadow-inset;
   width: 100%;
   //text-shadow: 0 2px 0 darken($purple, 20%);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, .25);
+  text-shadow: 0 2px 0 $semitransparent;
   background-image: url(image-path("background.svg"));
   background-position: center;
   background-repeat: repeat;
+  z-index: 1;
+  position: relative;
 
   padding: {
     top: 50px;
@@ -40,27 +42,8 @@
     transition: all 0.1s linear 0;
     display: inline-block;
 
-    &:active {
-      box-shadow: 0 1px darken($purple, 25%);
+    &:hover {
+      @include shadow-active;
     }
   }
-}
-
-.jumbotron:empty, .jumbotron.header {
-  height: 38%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.jumbotron.header {
-  padding-top: 50px + 75px;
-  padding-bottom: 50px + 15px;
-  margin-bottom: 10px;
-}
-
-.jumbotron.header + .main-content {
-  margin-top: 10%;
 }

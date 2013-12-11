@@ -1,0 +1,94 @@
+@import "variables";
+
+#background {
+  @include fluid-grid(10);
+  @include fluid-grid-push(3);
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 0 3px $semitransparent;
+  height: 100%;
+  z-index: 0;
+}
+
+.main-content {
+  @include fluid-grid(10);
+  @include fluid-grid-push(3);
+  color: #444;
+  padding: 20px;
+  text-shadow: 0 1px 0 white;
+  z-index: 1;
+
+  a {
+    //color: #00B4FF;
+    color: $link-blue;
+
+    transition: 0.5s all ease-in-out;
+
+    &:hover {
+      //color: darken(#00b4ff, 10%);
+      color: darken($link-blue, 10%);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @include header-font;
+  }
+
+  .staff-profile {
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.5s ease-in-out 0;
+    }
+
+    a img {
+      border: 0;
+      border-radius: 0;
+    }
+  }
+
+  form {
+    @include fluid-grid(16);
+
+    label {
+      &.required abbr {
+        display: none;
+      }
+      @include fluid-grid(4);
+    }
+
+    input, textarea, select {
+      @include fluid-grid(12);
+      padding: 5px;
+      outline: none;
+      @include main-font;
+    }
+
+    textarea {
+      margin: 5px;
+      @include fluid-grid(16);
+      min-height: 150px;
+    }
+
+    input[type=submit], input[type=button], input[type=reset] {
+      @include fluid-grid(4);
+
+      background-color: $purple;
+      color: white;
+
+      padding: 7px;
+      text-shadow: 0 1px 0 $semitransparent;
+      border: 0 none;
+      border-radius: 4px;
+      @include shadow;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        @include shadow-active;
+      }
+    }
+  }
+}

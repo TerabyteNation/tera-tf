@@ -5,6 +5,8 @@ $main-color: #444;
 $header-color: #fff;
 $purple: #8650AC;
 $link-blue: $purple; //#00B4FF;
+$semitransparent: rgba(0, 0, 0, .25);
+$ionicons-font-path: ".";
 
 @mixin main-font {
   font-family: "Open Sans";
@@ -31,11 +33,16 @@ $link-blue: $purple; //#00B4FF;
 }
 
 @mixin shadow {
-  box-shadow: 0 3px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 4px -1px $semitransparent;
 }
 
 @mixin shadow-active {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 1px 2px $semitransparent;
+}
+
+@mixin shadow-inset {
+  box-shadow: inset 0 -3px 4px -1px $semitransparent,
+    inset 0 3px 4px -1px $semitransparent;
 }
 
 $ninesixty-fluid-gutter-margin: 2%;

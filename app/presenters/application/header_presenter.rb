@@ -10,7 +10,7 @@ class Application::HeaderPresenter < Curly::Presenter
     else
       link_to(
         image_tag("sign_in.png"),
-        user_omniauth_authorize_path(:steam)
+        main_app.user_omniauth_authorize_path(:steam)
       ).html_safe
     end
   end

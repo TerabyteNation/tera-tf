@@ -8,6 +8,9 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
+  gem 'meta_request'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :heroku do
@@ -55,6 +58,7 @@ group :forum do
   gem 'cancan'
   gem 'forem', github: 'radar/forem', branch: 'rails4'
   gem 'will_paginate'
+  gem 'forem-rdiscount'
 end
 
 # Use ActiveModel has_secure_password
