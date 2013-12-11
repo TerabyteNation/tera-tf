@@ -26,7 +26,7 @@ html, body {
   @include fluid-grid-container;
 }
 
-footer {
+footer.main-footer {
   position: relative;
   margin-top: -$footer-height;
   height: $footer-height;
@@ -79,7 +79,7 @@ header {
     @include header-font;
     display: inline-block;
     color: $header-color;
-    @include fluid-grid(2);
+    @include fluid-grid(4);
     font-size: 24px;
     margin: {
       top: 20px;
@@ -93,14 +93,14 @@ header {
     padding: 0;
     display: inline-block;
     vertical-align: middle;
-    @include fluid-grid(10);
+    @include fluid-grid(8);
 
     a {
       display: inline-block;
       color: $header-color;
       text-decoration: none;
       text-align: center;
-      $number-of-elements: 6;
+      $number-of-elements: 7;
       @include fluid-grid(16/$number-of-elements);
       transition: all 0.5s ease-in-out 0;
       padding: {
@@ -122,7 +122,7 @@ header {
 
   span.user-info {
     margin: 23px 0;
-    text-align: center;
+    text-align: right;
     @include fluid-grid(4);
     height: 26px;
     color: $header-color;
@@ -135,6 +135,7 @@ header {
     }
     img {
       height: 100%;
+      vertical-align: middle;
     }
   }
 }

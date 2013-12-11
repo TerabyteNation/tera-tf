@@ -4,7 +4,7 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env, if ENV["HEROKU"] then :heroku else :"" end)
+Bundler.require(:default, Rails.env, :forum, if ENV["HEROKU"] then :heroku else :"" end)
 
 module TeraTf
   class Application < Rails::Application

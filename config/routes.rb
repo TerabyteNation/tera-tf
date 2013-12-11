@@ -22,6 +22,8 @@ TeraTf::Application.routes.draw do
 
   root to: "page#home"
 
+  mount Forem::Engine, at: "/forum"
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

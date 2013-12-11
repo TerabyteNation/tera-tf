@@ -50,9 +50,12 @@ gem 'sass-960gs'
 gem 'devise'
 gem 'omniauth-steam'
 
-gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
-
-gem 'kaminari', '0.14.1'
+group :forum do
+  gem 'friendly_id', github: "FriendlyId/friendly_id"
+  gem 'cancan'
+  gem 'forem', github: 'radar/forem', branch: 'rails4'
+  gem 'will_paginate'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

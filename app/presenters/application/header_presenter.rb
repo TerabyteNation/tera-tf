@@ -14,4 +14,20 @@ class Application::HeaderPresenter < Curly::Presenter
       ).html_safe
     end
   end
+
+  def avatar_image
+    if user_signed_in?
+      image_tag current_user.avatar
+    else
+      ""
+    end
+  end
+
+  def admin_link
+    if user_signed_in? && current_user.forem_admin
+      link_to forem.admin_root_path do
+        content_tag :li, "Admin"
+      end
+    end
+  end
 end
