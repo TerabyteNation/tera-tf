@@ -67,8 +67,10 @@ header {
   @include fluid-grid(16);
   @include alpha;
   @include omega;
+  @include shadow;
   width: 100%;
   text-shadow: 0 2px 0 black;
+
 
   div.content {
   }

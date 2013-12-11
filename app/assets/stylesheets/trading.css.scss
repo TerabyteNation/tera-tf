@@ -1,0 +1,33 @@
+@import "variables";
+
+.main-content {
+  table.trade-items {
+    width: 100%;
+
+    td a {
+      @include shadow;
+      background-color: rgba(0, 0, 0, (0.15));
+      border-radius: 4px;
+      display: block;
+      text-align: center;
+
+      @include main-font;
+      padding: 5px;
+      text-decoration: none;
+      transition: 0.5s color ease-in-out,
+        0.5s box-shadow ease-in-out;
+
+      &:hover {
+        color: $purple;
+      }
+
+      &:active {
+        @include shadow-active;
+      }
+
+      span.item-name {
+        display: block;
+      }
+    }
+  }
+}

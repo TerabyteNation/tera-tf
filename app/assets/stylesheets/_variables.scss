@@ -4,6 +4,7 @@ $header-background: #222;
 $main-color: #444;
 $header-color: #fff;
 $purple: #8650AC;
+$link-blue: $purple; //#00B4FF;
 
 @mixin main-font {
   font-family: "Open Sans";
@@ -31,6 +32,10 @@ $purple: #8650AC;
 
 @mixin shadow {
   box-shadow: 0 3px 0 rgba(0, 0, 0, .25);
+}
+
+@mixin shadow-active {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 }
 
 $ninesixty-fluid-gutter-margin: 2%;

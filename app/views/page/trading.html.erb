@@ -1,8 +1,11 @@
-<div class="jumbotron">
+<div class="jumbotron header">
   <h1>Trading</h1>
+</div>
+
+<div class="main-content">
   <h3>Please select the item you will be trading today.</h3>
 
-  <div class="sqr-button">
+  <!--<div class="sqr-button">
   	<a href="#"><img src="/assets/100px_scrap.png"></img></br>SCRAP</a>
   </div>
   <div class="sqr-button">
@@ -16,10 +19,18 @@
   </div>
   <div class="sqr-button">
   	<a href="#"><img src="/assets/100px_buds.png"></img></br>EARBUDS</a>
-  </div>
-</div>
+  </div>-->
 
-<div class="contentbox" style="background-color: #FFFFFF;">
-  <h2></h2>
+  <table class="trade-items">
+  <tr>
+    <% [:scrap, :reclaimed, :refined, :key, :buds].each do |type| %>
+      <td>
+        <a href="#">
+          <%= image_tag "100px_#{type}.png" %>
+          <span class="item-name"><%= type %></span>
+        </a>
+      </td>
+    <% end %>
+  </tr>
+  </table>
 </div>
-

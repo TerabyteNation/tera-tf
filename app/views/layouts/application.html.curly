@@ -14,7 +14,7 @@
     {{csrf}}
   </head>
 
-  <body style="background-color:#F5F5F5">
+  <body>
       <div id="container">
 
         {{header}}
