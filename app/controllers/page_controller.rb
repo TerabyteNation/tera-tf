@@ -29,4 +29,7 @@ class PageController < ApplicationController
   def sfm
   end
 
+  def privacy
+  end
+
 end
