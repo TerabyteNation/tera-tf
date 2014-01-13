@@ -1,1 +1,36 @@
-<div class="jumbotron"></div>
+<div class="jumbotron header">
+  <h1>Competitive</h1>
+</div>
+
+<div class="main-content">
+  <h3>Please select division you are searching for.</h3>
+
+  <!--<div class="sqr-button">
+    <a href="#"><img src="/assets/100px_scrap.png"></img></br>SCRAP</a>
+  </div>
+  <div class="sqr-button">
+    <a href="#"><img src="/assets/100px_reclaimed.png"></img></br>RECLAIMED</a>
+  </div>
+  <div class="sqr-button">
+    <a href="#"><img src="/assets/100px_refined.png"></img></br>REFINED</a>
+  </div>
+  <div class="sqr-button">
+    <a href="#"><img src="/assets/100px_key.png"></img></br>KEYS</a>
+  </div>
+  <div class="sqr-button">
+    <a href="#"><img src="/assets/100px_buds.png"></img></br>EARBUDS</a>
+  </div>-->
+
+  <table class="trade-items">
+  <tr>
+    <% [:highlander, :sixes, :medieval].each do |type| %>
+      <td>
+        <a href="#">
+          <%= image_tag "placeholder2.png" %>
+          <span class="item-name"><%= type %></span>
+        </a>
+      </td>
+    <% end %>
+  </tr>
+  </table>
+</div>
