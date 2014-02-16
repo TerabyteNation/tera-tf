@@ -18,6 +18,7 @@ TeraTf::Application.routes.draw do
   get "/page/terms"
   get "/page/competitive"
   get "/page/forum"
+  get "/page/community"
   get "/page/sfm"
   get "/page/privacy"
 

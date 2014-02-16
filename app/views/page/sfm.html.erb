@@ -1,4 +1,20 @@
 <div class="jumbotron header">
   <h1>Source Filmmaker</h1>
+</div>
 
+<div class="main-content">
+  <h3>Please select the SFM content you are searching for.</h3>
+
+  <table class="trade-items">
+  <tr>
+    <% [:resources, :guides, :videos, :posters].each do |type| %>
+      <td>
+        <a href="#">
+          <%= image_tag "100px_#{type}button.png" %>
+          <span class="item-name"><%= type %></span>
+        </a>
+      </td>
+    <% end %>
+  </tr>
+  </table>
 </div>
