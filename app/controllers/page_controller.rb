@@ -35,4 +35,7 @@ class PageController < ApplicationController
   def privacy
   end
 
+  def support
+  end
+
 end
