@@ -22,6 +22,7 @@ TeraTf::Application.routes.draw do
   get "/page/sfm"
   get "/page/privacy"
   get "/page/support"
+  get "/page/submissions"
 
   root to: "page#home"
 
