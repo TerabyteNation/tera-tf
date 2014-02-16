@@ -1,0 +1,20 @@
+<div class="jumbotron header">
+  <h1>Community</h1>
+</div>
+
+<div class="main-content">
+  <h3>Community Content</h3>
+
+  <table class="trade-items">
+  <tr>
+    <% [:sfm, :maps, :mods, :videos].each do |type| %>
+      <td>
+        <a href="#">
+          <%= image_tag "100px_#{type}button.png" %>
+          <span class="item-name"><%= type %></span>
+        </a>
+      </td>
+    <% end %>
+  </tr>
+  </table>
+</div>
