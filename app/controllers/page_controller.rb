@@ -38,4 +38,7 @@ class PageController < ApplicationController
   def support
   end
 
+  def submissions
+  end
+
 end
