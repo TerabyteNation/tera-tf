@@ -61,6 +61,9 @@ group :forum do
   gem 'forem-rdiscount'
 end
 
+#File attachment gem
+gem "paperclip", "~> 3.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
