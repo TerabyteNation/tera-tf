@@ -231,7 +231,7 @@ DEPENDENCIES
   devise
   forem!
   forem-rdiscount
-  friendly_id!
+  friendly_id (~> 5.0.0)!
   jbuilder (~> 1.2)
   jquery-rails
   meta_request

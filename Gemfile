@@ -54,7 +54,7 @@ gem 'devise'
 gem 'omniauth-steam'
 
 group :forum do
-  gem 'friendly_id', github: "FriendlyId/friendly_id"
+  gem "friendly_id", '~> 5.0.0', :github => "FriendlyId/friendly_id"
   gem 'cancan'
   gem 'forem', github: 'radar/forem', branch: 'rails4'
   gem 'will_paginate'
