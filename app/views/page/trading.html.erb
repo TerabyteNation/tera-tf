@@ -3,11 +3,11 @@
 </div>
 
 <div class="main-content">
-  <h3>Please select the item you will be trading today.</h3>
+  <h3>Please select what you are wanting to do.</h3>
 
   <table class="trade-items">
   <tr>
-    <% [:scrap, :reclaimed, :refined, :key, :buds].each do |type| %>
+    <% [:listings, :stats, :reputation, :forum].each do |type| %>
       <td>
         <a href="#">
           <%= image_tag "100px_#{type}.png" %>
