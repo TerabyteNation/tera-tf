@@ -61,8 +61,6 @@ end
 #File attachment gem
 gem "paperclip", "~> 3.0"
 
-gem 'steam-condenser'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
